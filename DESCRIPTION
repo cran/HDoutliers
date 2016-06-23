@@ -1,0 +1,18 @@
+Package: HDoutliers
+Version: 0.2
+Date: 2016-06-22
+Title: Leland Wilkinson's Algorithm for Detecting Multidimensional
+        Outliers
+Authors@R: c(person("Leland", "Wilkinson", role = c("aut"),
+            email = "leland.wilkinson@gmail.com"),
+     person("Chris", "Fraley", role = c("cre"), email = "cfraley@tableau.com"))
+Author: Leland Wilkinson [aut], Chris Fraley [cre]
+Maintainer: Chris Fraley  <cfraley@tableau.com>
+Depends: R (>= 3.1.0), FNN, FactoMineR
+Description: An implementation of an algorithm for outlier detection that can handle a) data with a mixed categorical and continuous variables, b) many columns of data, c) many rows of data, d) outliers that mask other outliers, and e) both unidimensional and multidimensional datasets. Unlike ad hoc methods found in many machine learning papers, HDoutliers is based on a distributional model that uses probabilities to determine outliers.
+License: GPL (>= 2)
+URL: https://www.r-project.org
+NeedsCompilation: no
+Packaged: 2016-06-22 22:46:06 UTC; cfraley
+Repository: CRAN
+Date/Publication: 2016-06-23 01:24:55
