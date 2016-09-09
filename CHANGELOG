@@ -1,0 +1,1 @@
+9/8/2016: changed argument `x' to `as.matrix(x)' in MCA call

@@ -13,9 +13,11 @@ function( data, maxrows=10000, radius=NULL, alpha=.05)
  }
 
  if (any(CAT)) {
-# convert each categorical variable to numeric via correspondence analysis
+# convert each categorical variable to numeric via 
+# multiple correspondence analysis using MCA function from FactoMineR
 #  require(FactoMineR)
-   data[,CAT] <- sapply( data[,CAT,drop=F], function(x) MCA(x,ncp=1,graph=F)$ind$coord)
+   data[,CAT] <- sapply( data[,CAT,drop=F], 
+                         function(x) MCA(as.matrix(x),ncp=1,graph=F)$ind$coord)
  }
 
 unitize <- function(z) {
