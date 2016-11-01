@@ -1,11 +1,11 @@
-a695a0d68504eedaf05adb1919af2e8f *CHANGELOG
-f228d091263d389d24d9dd0f74aec037 *DESCRIPTION
+15ae70f9aabc068c7ffaf0e00314c337 *CHANGELOG
+b6f9970075514c2cefbc0dffc5d5ad14 *DESCRIPTION
 b8744178270b0cb2dcbe8feb57543eac *LICENSE
 f02ae201534df70cb843a43b7ee0316d *NAMESPACE
 ed462981daf8373c9245b31abed94478 *R/HDoutliers.R
 0472ba6c3ccdceec2d9adf210f35f94f *R/getHDmembers.R
 7497948be2faeb10674002c00ce44c67 *R/getHDoutliers.R
-ab7b51b3e28666ae6459fd34c66847d1 *R/plotHDoutliers.R
+d95d51e420b6114eaca75354e6c4ba9d *R/plotHDoutliers.R
 d3ac0d870ae76c65a64aae0b3c566d5e *data/dots.rda
 9e467fdd8b9a2d2186d889f42e91c56a *data/ex2D.rda
 2a6b71f4fa9ec39b535866d6550990b1 *inst/doc/HDoutliers.pdf

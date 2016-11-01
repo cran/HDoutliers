@@ -5,7 +5,7 @@ function( data, indexes=NULL, ...) {
     if (type == "exemplars") indexes <- unlist(lapply( indexes, 
                                                        function(data) data[1]))
     if (ncol(data) == 1) {
-      plot( data, rep(0,length(data)),ylim=c(-1,1),type="n",ylab="",yadatat="n",...)
+      plot( data, rep(0,length(data)),ylim=c(-1,1),type="n",ylab="",yaxt="n",...)
       if (is.null(indexes)) {
         points( data, rep(0,length(data)), pch=1, col = "dodgerblue", cex = 2)
       }

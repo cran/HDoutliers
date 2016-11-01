@@ -1,1 +1,2 @@
-9/8/2016: changed argument `x' to `as.matrix(x)' in MCA call
+10/31/2016: fixed typo in plotHDoutliers (affected 1D plots)
+8/8/2016: changed argument `x' to `as.matrix(x)' in MCA call
