@@ -1,2 +1,4 @@
+11/16/2016: added URL for tech report to DESCRIPTION (also in inst/doc)
+11/15/2016: updated outlier bound code to conform to latest Java version
 10/31/2016: fixed typo in plotHDoutliers (affected 1D plots)
 8/8/2016: changed argument `x' to `as.matrix(x)' in MCA call

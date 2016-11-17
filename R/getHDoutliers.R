@@ -17,11 +17,11 @@ function( data, memberLists, alpha=.05)
 # names(gaps) <- 1:length(gaps)
 
  n4 <- max(min( 50, floor(n/4)),2)
- J <- 1:(n4-1)
+ J <- 1:n4
 
  start <- max(floor(n/2),1)+1
  ghat <- numeric(n)
- for (i in start:n) ghat[i] <- mean(J*gaps[i-J])
+ for (i in start:n) ghat[i] <- sum((J/n4)*gaps[i-J+1])
 
  logAlpha <- log(1/alpha)
 
