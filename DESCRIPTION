@@ -1,12 +1,14 @@
 Package: HDoutliers
-Version: 0.12
-Date: 2016-11-16
+Version: 0.14
+Date: 2016-11-27
 Title: Leland Wilkinson's Algorithm for Detecting Multidimensional
         Outliers
-Authors@R: c(person("Leland", "Wilkinson", role = c("aut"),
-            email = "leland.wilkinson@gmail.com"),
-     person("Chris", "Fraley", role = c("cre"), email = "cfraley@tableau.com"))
-Author: Leland Wilkinson [aut], Chris Fraley [cre]
+Authors@R: c(person("Chris", "Fraley", role = c("aut", "cre"),
+                     email = "cfraley@tableau.com"),
+              person("Leland", "Wilkinson", role = "ctb",
+                     email = "leland.wilkinson@gmail.com"))
+Author: Chris Fraley [aut, cre],
+  Leland Wilkinson [ctb]
 Maintainer: Chris Fraley  <cfraley@tableau.com>
 Depends: R (>= 3.1.0), FNN, FactoMineR
 Description: An implementation of an algorithm for outlier detection that can handle a) data with a mixed categorical and continuous variables, b) many columns of data, c) many rows of data, d) outliers that mask other outliers, and e) both unidimensional and multidimensional datasets. Unlike ad hoc methods found in many machine learning papers, HDoutliers is based on a distributional model that uses probabilities to determine outliers. See <https://www.cs.uic.edu/~wilkinson/Publications/outliers.pdf>.
@@ -14,6 +16,6 @@ License: MIT + file LICENSE
 URL: https://www.r-project.org,
         https://www.cs.uic.edu/~wilkinson/Publications/outliers.pdf
 NeedsCompilation: no
-Packaged: 2016-11-16 23:18:00 UTC; cfraley
+Packaged: 2016-11-28 15:57:14 UTC; cfraley
 Repository: CRAN
-Date/Publication: 2016-11-17 08:27:25
+Date/Publication: 2016-11-28 22:13:28

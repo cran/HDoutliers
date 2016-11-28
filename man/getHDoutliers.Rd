@@ -49,6 +49,7 @@ a call to \code{getHDmembers} is equivalent to calling \code{HDoutliers}.
 }
 \section{References}{
   Wilkinson, L. (2016). Visualizing Outliers.
+<https://www.cs.uic.edu/~wilkinson/Publications/outliers.pdf>.
 }
 \seealso{
   \code{\link{HDoutliers}},

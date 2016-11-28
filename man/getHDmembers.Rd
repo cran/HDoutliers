@@ -41,7 +41,7 @@ getHDmembers(data, maxrows = 10000, radius = NULL)
   outlier detection. \cr
   When there are fewer observations, the result is a list whose elements are 
   the individual observations (each observation is an exemplar, with  no
-  other members).
+  other members). 
 }
 
 \value{
@@ -53,6 +53,7 @@ getHDmembers(data, maxrows = 10000, radius = NULL)
 
 \section{References}{
   Wilkinson, L. (2016). Visualizing Outliers.
+<https://www.cs.uic.edu/~wilkinson/Publications/outliers.pdf>.
 }
 \seealso{
   \code{\link{HDoutliers}},

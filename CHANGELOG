@@ -1,3 +1,4 @@
+11/21/2016: updated DESCRIPTION file to properly credit R package authorship
 11/16/2016: added URL for tech report to DESCRIPTION (also in inst/doc)
 11/15/2016: updated outlier bound code to conform to latest Java version
 10/31/2016: fixed typo in plotHDoutliers (affected 1D plots)

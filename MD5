@@ -1,5 +1,5 @@
-e74999363ef1f0d69e7678ef63baaed4 *CHANGELOG
-a3e093a813cc054eaef13f25a509f511 *DESCRIPTION
+7052f125d96be71e6567c8a92b869e49 *CHANGELOG
+200fede269b16ebfde134078eb2901e6 *DESCRIPTION
 b8744178270b0cb2dcbe8feb57543eac *LICENSE
 f02ae201534df70cb843a43b7ee0316d *NAMESPACE
 ed462981daf8373c9245b31abed94478 *R/HDoutliers.R
@@ -10,8 +10,8 @@ d3ac0d870ae76c65a64aae0b3c566d5e *data/dots.rda
 9e467fdd8b9a2d2186d889f42e91c56a *data/ex2D.rda
 2a6b71f4fa9ec39b535866d6550990b1 *inst/doc/HDoutliers.pdf
 e6185c87ac0e1e8be631c6e31ee952f2 *man/HDoutliers.Rd
-1e914959846af7dcf173651ccb3ad278 *man/dots.Rd
+4a2e512ff240c826ef3fc0967866c59a *man/dots.Rd
 948960d0616c5958f041569b97e05645 *man/ex2D.Rd
-43363a1ae2b7beb404eae64cca6f8e84 *man/getHDmembers.Rd
-252ba21ddeaccc1bac3c35e0679705a2 *man/getHDoutliers.Rd
+91b3af9aaa3a779bce732490abf4c926 *man/getHDmembers.Rd
+98b2a84bc7a9bf09e4e181298c6d016c *man/getHDoutliers.Rd
 ef2fc1c71ab6d08891693dc74cdf2e09 *man/plotHDoutliers.Rd
