@@ -1,4 +1,4 @@
-import( FactoMineR, FNN)
+import( FactoMineR, FNN, mclust)
 
 export( HDoutliers, getHDmembers, getHDoutliers, plotHDoutliers)
 
