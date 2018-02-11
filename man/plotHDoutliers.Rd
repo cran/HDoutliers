@@ -4,11 +4,11 @@
    Display Outlier Detection Results
 }
 \description{
-Plotting function outliers detected
+Plotting function showing observations determined to be outliers.
 }
 
 \usage{
-plotHDoutliers(data, indexes = NULL, ...) 
+plotHDoutliers(data, indexes = NULL, transform = TRUE, ...) 
 }
 
 \arguments{
@@ -19,13 +19,22 @@ plotHDoutliers(data, indexes = NULL, ...)
   \item{indexes}{
     The (row) indexes of the outliers in \code{data}.
   }
+ \item{transform}{
+     A logical variable indicating whether or not the data needs to be
+     transformed to conform to Wilkinson's specifications before outlier
+     detection. The default is to transform the data using function
+     \code{dataTrans}.
+     In Wilksinson's algorithm, \code{indexes} would have been derived
+     from transformed data.
+   }
   \item{...}{
     Additional plotting arguments.
   }
 }
 
 \details{
-   Produces a plot of the data showing the outliers. If the data has more than
+   Produces a plot of the data (transformed according to the Wilkinson's
+   specifications) showing the outliers. If the data has more than
    two dimensions, it is plotted onto the principal components of the data that
    remains after removing outliers.
 }
@@ -40,6 +49,7 @@ plotHDoutliers(data, indexes = NULL, ...)
 
 \seealso{
   \code{\link{HDoutliers}},
+  \code{\link{dataTrans}}
 }
 
 \examples{

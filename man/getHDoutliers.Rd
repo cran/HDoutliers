@@ -1,14 +1,14 @@
 \name{getHDoutliers}
 \alias{getHDoutliers}
 \title{
-  Outlier Detection Stage of the HD Outliers Algorithm
+  Outlier Detection Stage of Wilkinson's \emph{hdoutliers} Algorithm
 }
 \description{
 Detects outliers based on a probability model.
 }
 
 \usage{
-getHDoutliers(data, memberLists, alpha = 0.05) 
+getHDoutliers(data, memberLists, alpha = 0.05, transform = TRUE) 
 }
 
 \arguments{
@@ -29,8 +29,15 @@ getHDoutliers(data, memberLists, alpha = 0.05)
     outliers if they fall in the \eqn{(1- alpha)} tail of the distribution
     of the nearest-neighbor distances between \emph{exemplars}.
   }
+ \item{transform}{
+     A logical variable indicating whether or not the data needs to be
+     transformed to conform to Wilkinson's specifications before outlier
+     detection. The default is to transform the data using function
+     \code{dataTrans}.
+     In Wilksinson's algorithm, \code{memberLists} would have been created 
+     with transformed data.
+   }
 }
-
 \details{
   An exponential distribution is fitted to the upper tail of the 
   nearest-neighbor distances between \emph{exemplars} (the observations
@@ -53,7 +60,8 @@ a call to \code{getHDmembers} is equivalent to calling \code{HDoutliers}.
 }
 \seealso{
   \code{\link{HDoutliers}},
-  \code{\link{getHDmembers}}
+  \code{\link{getHDmembers}},
+  \code{\link{dataTrans}}
 }
 
 \examples{

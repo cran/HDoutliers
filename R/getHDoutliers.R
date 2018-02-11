@@ -1,8 +1,13 @@
 getHDoutliers <-
-function (data, memberLists, alpha = 0.05) 
+function (data, memberLists, alpha = 0.05, transform = TRUE) 
 {
+
+    data <- if (transform) dataTrans(data) else as.matrix(data)
+
+    if (any(is.na(data))) stop("missing values not allowed")
+
     exemplars <- sapply(memberLists, function(x) x[[1]])
-    data <- as.matrix(data)
+
     d <- knn.dist(data[exemplars, ], k = 1)
     n <- length(d)
     ord <- order(d)

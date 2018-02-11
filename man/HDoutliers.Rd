@@ -1,14 +1,14 @@
 \name{HDoutliers}
 \alias{HDoutliers}
 \title{
-  Leland Wilkinson's HDoutliers Algorithm for Outlier Detection
+  Leland Wilkinson's \emph{hdoutliers} Algorithm for Outlier Detection
 }
 \description{
 Detects outliers based on a probability model.
 }
 
 \usage{
-HDoutliers(data, maxrows = 10000, radius = NULL, alpha = 0.05) 
+HDoutliers(data, maxrows=10000, radius=NULL, alpha=0.05, transform=TRUE) 
 }
 
 \arguments{
@@ -35,9 +35,18 @@ HDoutliers(data, maxrows = 10000, radius = NULL, alpha = 0.05)
     outliers if they fall in the \eqn{(1- alpha)} tail of the distribution
     of the nearest-neighbor distances between \emph{exemplars}.
   }
+  \item{transform}{
+     A logical variable indicating whether or not the data needs to be
+     transformed to conform to Wilkinson's specifications before outlier
+     detection. The default is to transform the data using function
+     \code{dataTrans}.
+   }
 }
 
 \details{
+  Wilkinson replaces categorical variables with the leading component from
+  correspondence analysis, and maps the data to the unit square. This is
+  done as a preprocessing step if \code{transform = TRUE} (the default). \cr
   If the number of observations exceeds \code{maxrows}, 
   the data is first partitioned into lists associated with \emph{exemplars} 
   and their \emph{members} within \code{radius} of each \emph{exemplar},
@@ -58,7 +67,8 @@ HDoutliers(data, maxrows = 10000, radius = NULL, alpha = 0.05)
 }
 \seealso{
   \code{\link{getHDmembers}},
-  \code{\link{getHDoutliers}}
+  \code{\link{getHDoutliers}},
+  \code{\link{dataTrans}}
 }
 
 \examples{

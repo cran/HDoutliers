@@ -1,6 +1,6 @@
 Package: HDoutliers
-Version: 0.15
-Date: 2016-12-23
+Version: 1.0
+Date: 2018-02-09
 Title: Leland Wilkinson's Algorithm for Detecting Multidimensional
         Outliers
 Authors@R: c(person("Chris", "Fraley", role = c("aut", "cre"),
@@ -16,6 +16,6 @@ License: MIT + file LICENSE
 URL: https://www.r-project.org,
         https://www.cs.uic.edu/~wilkinson/Publications/outliers.pdf
 NeedsCompilation: no
-Packaged: 2016-12-23 19:48:17 UTC; cfraley
+Packaged: 2018-02-09 20:13:12 UTC; cfraley
 Repository: CRAN
-Date/Publication: 2016-12-24 11:23:58
+Date/Publication: 2018-02-11 14:41:07 UTC

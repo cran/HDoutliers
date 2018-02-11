@@ -1,10 +1,10 @@
 \name{getHDmembers}
 \alias{getHDmembers}
 \title{
-     Partitioning Stage of the HDoutliers Algorithm
+     Partitioning Stage of the \emph{hdoutliers} Algorithm
 }
 \description{
-Implements the first stage of the HDoutliers Algorithm, in which the
+Implements the first stage of the \emph{hdoutliers} Algorithm, in which the
 data is partitioned according to \emph{exemplars}
 and their associated lists of \emph{members}.
 }

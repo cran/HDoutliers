@@ -1,6 +1,10 @@
 plotHDoutliers <-
-function( data, indexes=NULL, ...) {
-    data <- as.matrix(data)
+function( data, indexes=NULL, transform = TRUE, ...) {
+
+    data <- if (transform) dataTrans(data) else as.matrix(data)
+
+    if (any(is.na(data))) stop("missing values not allowed")
+
     type <- "outliers"
     if (type == "exemplars") indexes <- unlist(lapply( indexes, 
                                                        function(data) data[1]))
