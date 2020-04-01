@@ -1,5 +1,5 @@
 Package: HDoutliers
-Version: 1.0
+Version: 1.0.1
 Date: 2018-02-09
 Title: Leland Wilkinson's Algorithm for Detecting Multidimensional
         Outliers
@@ -16,6 +16,6 @@ License: MIT + file LICENSE
 URL: https://www.r-project.org,
         https://www.cs.uic.edu/~wilkinson/Publications/outliers.pdf
 NeedsCompilation: no
-Packaged: 2018-02-09 20:13:12 UTC; cfraley
+Packaged: 2020-03-30 11:46:01 UTC; hornik
 Repository: CRAN
-Date/Publication: 2018-02-11 14:41:07 UTC
+Date/Publication: 2020-04-01 05:40:45 UTC
