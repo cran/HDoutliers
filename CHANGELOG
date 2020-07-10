@@ -1,4 +1,5 @@
-02/08/2018: Added missing value warning. Added dataTrans function and
+07/09/2020: added constant-column detection
+02/08/2018: added missing value warning. Added dataTrans function and
              applied data transformation in getHDoutliers and
              plotHDoutliers. (John Williams)
 12/23/2016: corrected to handle duplicate rows when n <= maxrows [Antony Unwin]
