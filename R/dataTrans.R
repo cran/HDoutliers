@@ -33,6 +33,5 @@ function (data)
             return(rep(0, length(z)))
         (z - zrange[1])/dif
     }
-    print(dim(data))
     apply(as.matrix(data), 2, unitize)
 }
