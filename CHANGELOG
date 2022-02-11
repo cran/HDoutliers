@@ -1,3 +1,4 @@
+02/10/2020: change maintainer E-mail
 09/28/2020: removed extraneous printing (reported by Antony Unwin)
 07/09/2020: added constant-column detection (response to  Maria Burkiewicz)
 02/08/2018: added missing value warning. Added dataTrans function and
